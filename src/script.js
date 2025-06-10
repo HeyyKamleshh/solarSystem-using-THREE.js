@@ -46,14 +46,14 @@ scene.add(ambientLight);
 // planets data
 
   const planetData = [
-  { name: "Mercury", size: 12, distance: 50, orbitSpeed: 0.02, texture: "public/textures/mercury.jpg", rotation_speed: 0.002 },
-  { name: "Venus", size: 12, distance: 90, orbitSpeed: 0.025, texture: "public/textures/venus.jpg", rotation_speed: 0.002 },
-  { name: "Earth", size: 12, distance: 140, orbitSpeed: 0.021, texture: "public/textures/earth.jpg", rotation_speed: 0.02 },
-  { name: "Mars", size: 12, distance: 200, orbitSpeed: 0.02, texture: "public/textures/mars.jpg", rotation_speed: 0.02 },
-  { name: "Jupiter", size: 12, distance: 270, orbitSpeed: 0.015, texture: "public/textures/jupiter.jpg", rotation_speed: 0.02 },
-  { name: "Saturn", size: 12, distance: 350, orbitSpeed: 0.012, texture: "public/textures/saturn.jpg", rotation_speed: 0.02 },
-  { name: "Uranus", size: 12, distance: 430, orbitSpeed: 0.01, texture: "public/textures/uranus.jpg", rotation_speed: 0.02 },
-  { name: "Neptune", size: 12, distance: 500, orbitSpeed: 0.005, texture: "public/textures/neptune.jpg", rotation_speed: 0.02 }
+  { name: "Mercury", size: 12, distance: 50, orbitSpeed: 0.02, texture: "textures/mercury.jpg", rotation_speed: 0.002 },
+  { name: "Venus", size: 12, distance: 90, orbitSpeed: 0.025, texture: "textures/venus.jpg", rotation_speed: 0.002 },
+  { name: "Earth", size: 12, distance: 140, orbitSpeed: 0.021, texture: "textures/earth.jpg", rotation_speed: 0.02 },
+  { name: "Mars", size: 12, distance: 200, orbitSpeed: 0.02, texture: "textures/mars.jpg", rotation_speed: 0.02 },
+  { name: "Jupiter", size: 12, distance: 270, orbitSpeed: 0.015, texture: "textures/jupiter.jpg", rotation_speed: 0.02 },
+  { name: "Saturn", size: 12, distance: 350, orbitSpeed: 0.012, texture: "textures/saturn.jpg", rotation_speed: 0.02 },
+  { name: "Uranus", size: 12, distance: 430, orbitSpeed: 0.01, texture: "textures/uranus.jpg", rotation_speed: 0.02 },
+  { name: "Neptune", size: 12, distance: 500, orbitSpeed: 0.005, texture: "textures/neptune.jpg", rotation_speed: 0.02 }
 ];
 
 // orbit line
