@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import * as THREE from "https://cdn.skypack.dev/three@0.129.0";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
 
 const controlButton = document.getElementById('control_button');
 const rotate = document.getElementById('rotate_table');
