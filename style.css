@@ -36,7 +36,7 @@ canvas {
   /* width: 220px; */
   width: 100%;
   max-width: 400px;
-  /* font-size: 14px; */
+  font-size: 14px;
   border: 1px white solid;
   
 }
@@ -45,7 +45,6 @@ canvas {
   font-size: 13px;
   display: block;
   margin: 6px 0;
-  width: 100%;
 
 }
 
