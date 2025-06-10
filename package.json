@@ -18,5 +18,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyyKamleshh/solarSystem-using-THREE.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HeyyKamleshh/solarSystem-using-THREE.js/issues"
+  },
+  "homepage": "https://github.com/HeyyKamleshh/solarSystem-using-THREE.js#readme",
   "description": ""
 }
