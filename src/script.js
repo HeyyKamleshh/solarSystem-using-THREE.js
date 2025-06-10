@@ -142,7 +142,7 @@ planetData.forEach((data, index) => {
   orbitData.type = 'range';
   orbitData.min = 0;
   orbitData.max = 0.05;
-  orbitData.step = 0.01;
+  orbitData.step = 0.001;
   orbitData.value = data.orbitSpeed;
   orbitData.style.width = '100%';
 
@@ -168,7 +168,7 @@ planetData.forEach((data, index) => {
   rotateData.type = 'range';
   rotateData.min = 0;
   rotateData.max = 0.05;
-  rotateData.step = 0.01;
+  rotateData.step = 0.001;
   rotateData.value = data.rotation_speed;
   rotateData.style.width = '100%';
 
