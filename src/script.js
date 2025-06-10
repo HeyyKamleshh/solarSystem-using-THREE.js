@@ -1,5 +1,5 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.129.0";
-import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
+import { OrbitControls } from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
 
 const controlButton = document.getElementById('control_button');
 const rotate = document.getElementById('rotate_table');
