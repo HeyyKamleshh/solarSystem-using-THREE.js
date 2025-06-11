@@ -6,6 +6,21 @@ This project is a **3D visualization of the solar system** using **Three.js**, s
 [Click here to view the project on  Vercel](https://solar-system-using-three-js-g69x.vercel.app/)
 
 ---
+## 📦 Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/HeyyKamleshh/solarSystem-using-THREE.js.git
+cd solarSystem-using-THREE
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Start development server
+```bash
+npm run dev
+```
 
 ## 🚀 Features
 
@@ -40,6 +55,22 @@ root/
 │
 ├── index.html 
 ├── style.css
+├── package.json
+├──package-lock.json
 ├── README.md 
 
 ```
+
+## 🧠 How It Works
+
+- Planets are created using `THREE.SphereGeometry` with respective textures.
+- The Sun uses `MeshBasicMaterial` to glow, while planets use `MeshStandardMaterial` to reflect light.
+- A `PointLight` is placed at the center (Sun) to simulate sunlight.
+- Each planet orbits around the Sun using trigonometric calculations, and rotates on its own axis.
+- Orbit paths are visualized using `THREE.LineLoop`.
+- Background stars are randomly placed `THREE.Points`.
+- UI elements allow users to interact with the scene and adjust parameters dynamically.
+
+---
+
+## 📸 Screenshots
