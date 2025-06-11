@@ -11,7 +11,7 @@ This project is a **3D visualization of the solar system** using **Three.js**, c
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/HeyyKamleshh/solarSystem-using-THREE.js.git
-cd solarSystem-using-THREE
+cd solarSystem-using-THREE.js/
 ```
 ### 2. Install dependencies
 ```bash
