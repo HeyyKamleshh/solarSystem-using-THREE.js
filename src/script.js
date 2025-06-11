@@ -36,11 +36,11 @@ sun.position.set(0, 0, 0);
 scene.add(sun);
 
 //  light source
-const light = new THREE.PointLight(0xffffff, 3, 0);
+const light = new THREE.PointLight(0xffffff, 1, 0);
 light.position.copy(sun.position);
 scene.add(light);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 scene.add(ambientLight);
 
 
