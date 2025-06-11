@@ -74,3 +74,7 @@ root/
 ---
 
 ## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/e87949b2-8379-48ed-819e-c9122101aef1)
+
+![image](https://github.com/user-attachments/assets/273fc183-83d3-4581-b0c3-780e42a9f81a)
+
