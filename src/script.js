@@ -31,30 +31,30 @@ function createSphere(texture, radius, width, height, materialType) {
 }
 
 // sun
-const sun = createSphere('textures/sun.jpg', 20, 100, 100, 'basic');
+const sun = createSphere('../textures/sun.jpg', 20, 100, 100, 'basic');
 sun.position.set(0, 0, 0);
 scene.add(sun);
 
 //  light source
-const light = new THREE.PointLight(0xffffff, 1, 0);
+const light = new THREE.PointLight(0xffffff, 3, 0);
 light.position.copy(sun.position);
 scene.add(light);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
 
 // planets data
 
   const planetData = [
-  { name: "Mercury", size: 12, distance: 50, orbitSpeed: 0.02, texture: "textures/mercury.jpg", rotation_speed: 0.002 },
-  { name: "Venus", size: 12, distance: 90, orbitSpeed: 0.025, texture: "textures/venus.jpg", rotation_speed: 0.002 },
-  { name: "Earth", size: 12, distance: 140, orbitSpeed: 0.021, texture: "textures/earth.jpg", rotation_speed: 0.02 },
-  { name: "Mars", size: 12, distance: 200, orbitSpeed: 0.02, texture: "textures/mars.jpg", rotation_speed: 0.02 },
-  { name: "Jupiter", size: 12, distance: 270, orbitSpeed: 0.015, texture: "textures/jupiter.jpg", rotation_speed: 0.02 },
-  { name: "Saturn", size: 12, distance: 350, orbitSpeed: 0.012, texture: "textures/saturn.jpg", rotation_speed: 0.02 },
-  { name: "Uranus", size: 12, distance: 430, orbitSpeed: 0.01, texture: "textures/uranus.jpg", rotation_speed: 0.02 },
-  { name: "Neptune", size: 12, distance: 500, orbitSpeed: 0.005, texture: "textures/neptune.jpg", rotation_speed: 0.02 }
+  { name: "Mercury", size: 12, distance: 50, orbitSpeed: 0.02, texture: "../textures/mercury.jpg", rotation_speed: 0.002 },
+  { name: "Venus", size: 12, distance: 90, orbitSpeed: 0.025, texture: "../textures/venus.jpg", rotation_speed: 0.002 },
+  { name: "Earth", size: 12, distance: 140, orbitSpeed: 0.021, texture: "../textures/earth.jpg", rotation_speed: 0.02 },
+  { name: "Mars", size: 12, distance: 200, orbitSpeed: 0.02, texture: "../textures/mars.jpg", rotation_speed: 0.02 },
+  { name: "Jupiter", size: 12, distance: 270, orbitSpeed: 0.015, texture: "../textures/jupiter.jpg", rotation_speed: 0.02 },
+  { name: "Saturn", size: 12, distance: 350, orbitSpeed: 0.012, texture: "../textures/saturn.jpg", rotation_speed: 0.02 },
+  { name: "Uranus", size: 12, distance: 430, orbitSpeed: 0.01, texture: "../textures/uranus.jpg", rotation_speed: 0.02 },
+  { name: "Neptune", size: 12, distance: 500, orbitSpeed: 0.005, texture: "../textures/neptune.jpg", rotation_speed: 0.02 }
 ];
 
 // orbit line
@@ -118,11 +118,9 @@ let initial_visible = false;
 function visibleText() {
   if (initial_visible) {
     Container.style.display = 'flex'; 
-    pauseButton.style.display = 'block';
     controlButton.textContent = 'Hide Controls';
   } else {
     Container.style.display = 'none';
-    pauseButton.style.display = 'none';
     controlButton.textContent = 'Show Controls';
   }
 }
@@ -144,7 +142,7 @@ planetData.forEach((data, index) => {
   orbitData.max = 0.05;
   orbitData.step = 0.001;
   orbitData.value = data.orbitSpeed;
-  orbitData.style.width = '100%';
+  // orbitData.style.width = '100%';
 
   const value = document.createElement('span');
   value.textContent = data.orbitSpeed.toFixed(2);
@@ -170,7 +168,7 @@ planetData.forEach((data, index) => {
   rotateData.max = 0.05;
   rotateData.step = 0.001;
   rotateData.value = data.rotation_speed;
-  rotateData.style.width = '100%';
+  // rotateData.style.width = '100%';
 
   const value1 = document.createElement('span');
   value1.textContent = data.rotation_speed.toFixed(3);
